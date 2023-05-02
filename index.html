@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CSS255NormanJ</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>PLEASE MAKE SURE TO OPEN YOUR CONSOLE TO DISPLPAY THE RESULTS<br>
+    YOU CAN DO THIS BY PRESSING AND HOLDING ctrl+shift+i </h1>
+  ///////////////////////////////////////////////////////////////////////////
+  <div class="neon-green-box">
+    <h2 class="neon-red-text">Declaring and Using Variables</h2>
+    <button class="neon-purple-button" onclick="runScript1()">Run Script 1</button>
+
+    <script>
+      function runScript1() {
+        let message;
+        message = 'Bonjour, this is one of the 3 ways to declare a //variable. Using the "let" variable.';
+        console.log(message);
+
+      }
+    </script>
+
+  </div>
+  ///////////////////////////////////////////////////////////////////////////
+  <div class="neon-green-box">
+    <h2 class="neon-red-text"> Using arithmetic operators</h2>
+    <button class="neon-purple-button" onclick="runScript2()">Run Script 2</button>
+
+    <script>
+      function runScript2() {
+        let x = 110 + 56;
+        console.log("The sum is " + x);
+      }
+    </script>
+
+  </div>
+  ///////////////////////////////////////////////////////////////////////////
+  <div class="neon-green-box">
+    <h2 class="neon-red-text">Using template literals</h2>
+    <button class="neon-purple-button" onclick="runScript3()">Run Script 3</button>
+
+    <script>
+      function runScript3() {
+        const name = "Benoit Mandelbrot";
+        const date = "November 20, 1924";
+        const place = "Warsaw, Poland";
+        const end = "October 14, 2010";
+        console.log(`${name} was born on ${date} in ${place}, and died on ${end}`);
+      }
+    </script>
+
+  </div>
+  ///////////////////////////////////////////////////////////////////////////
+  <div class="neon-green-box">
+    <h2 class="neon-red-text">Methods for working with strings</h2>
+    <button class="neon-purple-button" onclick="runScript4()">Run Script 4</button>
+
+    <script>
+      function runScript4() {
+        const str = 'Today was a good day, momma cooked the breakfast with no hog';
+        const substr = str.slice(3, 12);
+        console.log({substr});
+      }
+    </script>
+
+  </div>
+  ///////////////////////////////////////////////////////////////////////////
+  <div class="neon-green-box">
+    <h2 class="neon-red-text">Conditional Statements </h2>
+    <button class="neon-purple-button" onclick="runScript5()">Run Script 5</button>
+
+    <script>
+      function runScript5() {
+        const name = "You can";
+        let age = Number(prompt("Please enter your age:"));
+        if (age > 21) {
+          console.log(`${name} enter the establishment`);
+        } else {console.log(`${name} not enter, because you are a not of age`)};
+      }
+    </script>
+
+  </div>
+  ///////////////////////////////////////////////////////////////////////////
+</body>
+
+</html>
